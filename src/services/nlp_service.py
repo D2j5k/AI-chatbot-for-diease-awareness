@@ -21,4 +21,8 @@ class NLPService:
             entities["disease"] = "malaria"
         if "flu" in text.lower():
             entities["disease"] = "influenza"
+        if "0-1 year" in text.lower():
+            entities["age_group"] = "0-1 year"
+        if "1-2 years" in text.lower():
+            entities["age_group"] = "1-2 years"
         return entities
