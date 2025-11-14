@@ -18,4 +18,11 @@ class HealthQueryService:
                     return f"The symptoms of {disease} are: {', '.join(item['symptoms'])}"
             return f"Sorry, I don't have information about {disease}."
 
+        elif intent == "query_vaccination" and "age_group" in entities:
+            age_group = entities["age_group"]
+            for item in self.db["vaccination_schedules"]:
+                if item["age_group"] == age_group:
+                    return f"The recommended vaccines for the {age_group} age group are: {', '.join(item['vaccines'])}"
+            return f"Sorry, I don't have vaccination information for the {age_group} age group."
+
         return "I'm sorry, I can't answer that question. Please try rephrasing."
