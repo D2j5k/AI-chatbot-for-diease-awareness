@@ -1,0 +1,32 @@
+{
+  "preventive_care": [
+    {
+      "topic": "Hand Washing",
+      "details": "Wash your hands frequently with soap and water for at least 20 seconds, especially after being in public places or after blowing your nose, coughing, or sneezing."
+    },
+    {
+      "topic": "Healthy Diet",
+      "details": "Eat a balanced diet rich in fruits, vegetables, and whole grains to boost your immune system."
+    }
+  ],
+  "disease_symptoms": [
+    {
+      "disease": "influenza",
+      "symptoms": ["fever", "cough", "sore throat", "runny or stuffy nose", "muscle or body aches", "headaches", "fatigue"]
+    },
+    {
+      "disease": "malaria",
+      "symptoms": ["fever", "chills", "headache", "nausea and vomiting", "muscle pain and fatigue"]
+    }
+  ],
+  "vaccination_schedules": [
+    {
+      "age_group": "0-1 year",
+      "vaccines": ["BCG", "Hepatitis B", "Polio", "DTP", "Hib", "Pneumococcal", "Rotavirus", "Measles"]
+    },
+    {
+      "age_group": "1-2 years",
+      "vaccines": ["MMR", "Varicella", "Hepatitis A"]
+    }
+  ]
+}
